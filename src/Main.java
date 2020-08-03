@@ -37,4 +37,12 @@ public class Main extends JFrame {
     // public void run(){
 
     // }
+
+    // public void cell(){
+
+    // }
+
+    // public void grid(){
+
+    // }
 }
