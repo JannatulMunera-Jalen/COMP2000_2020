@@ -4,7 +4,7 @@ import java.awt.*;
 public class Main extends JFrame {
     public static void main(String[] args) throws Exception {
         Main window= new Main();
-        //window.run();
+        window.run();
     }
 
     public class Canvas extends JPanel{
@@ -18,7 +18,7 @@ public class Main extends JFrame {
 
          @Override
          public void paint(Graphics g){
-             grid.paint(g);
+             grid.paint(g, getMousePosition()); 
          }
     }
 
@@ -30,16 +30,11 @@ public class Main extends JFrame {
         this.setVisible(true);
     }
 
+    public void run(){
+        while(true){
+            this.repaint();
+        }
+    }
 
-    // public void run(){
-
-    // }
-
-    // public void cell(){
-
-    // }
-
-    // public void grid(){
-
-    // }
+   
 }
